@@ -1,0 +1,24 @@
+ORGANIZATION_BLOCK MAIN:OB1
+TITLE=Program Comments
+BEGIN
+Network 1 
+// Start
+LD     I0.0
+S      M0.0, 1
+Network 2 
+// Stop
+LD     I0.1
+R      M0.0, 1
+END_ORGANIZATION_BLOCK
+SUBROUTINE_BLOCK SBR_0:SBR0
+TITLE=Subroutine Comments
+BEGIN
+Network 1 
+// Network Comment
+END_SUBROUTINE_BLOCK
+INTERRUPT_BLOCK INT_0:INT0
+TITLE=Interrupt routine comments
+BEGIN
+Network 1 
+// Network Comment
+END_INTERRUPT_BLOCK

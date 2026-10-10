@@ -1,0 +1,34 @@
+ORGANIZATION_BLOCK MAIN:OB1
+TITLE=Program Comments
+BEGIN
+Network 1 
+// Network SADFASDFSDAF
+LD     I0.0
+S      M0.0, 1
+Network 2 
+// SADFSADF
+LD     I0.1
+R      M0.0, 1
+Network 3 
+// SDFSADFSDAF
+LD     I0.2
+A      M0.0
+=      M0.1
+Network 4 
+// SADFGASDFGASDG
+LDN    M0.1
+=      M0.2
+=      Q0.0
+END_ORGANIZATION_BLOCK
+SUBROUTINE_BLOCK SBR_0:SBR0
+TITLE=Subroutine Comments
+BEGIN
+Network 1 
+// Network Comment
+END_SUBROUTINE_BLOCK
+INTERRUPT_BLOCK INT_0:INT0
+TITLE=Interrupt routine comments
+BEGIN
+Network 1 
+// Network Comment
+END_INTERRUPT_BLOCK

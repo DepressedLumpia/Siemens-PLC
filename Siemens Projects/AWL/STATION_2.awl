@@ -1,0 +1,46 @@
+ORGANIZATION_BLOCK MAIN:OB1
+TITLE=Program Comments
+BEGIN
+Network 1 
+// PROGRAM START
+LD     I1.0
+S      M0.0, 1
+Network 2 
+// PROGRAM RESET
+LD     I1.5
+R      M0.0, 1
+Network 3 
+// FUNCTION START (SENSOR)
+LD     M0.0
+A      I1.4
+S      M1.0, 1
+Network 4 
+// OUTPUTS / HOMING
+LD     M0.0
+LPS
+A      M3.0
+S      Q0.0, 1
+R      Q0.1, 1
+LPP
+AN     M3.0
+S      Q0.1, 1
+R      Q0.0, 1
+Network 5 
+// MEMORY MOVEMENT
+// 
+LD     M0.0
+A      I1.4
+=      M3.0
+END_ORGANIZATION_BLOCK
+SUBROUTINE_BLOCK SBR_0:SBR0
+TITLE=Subroutine Comments
+BEGIN
+Network 1 
+// Network Comment
+END_SUBROUTINE_BLOCK
+INTERRUPT_BLOCK INT_0:INT0
+TITLE=Interrupt routine comments
+BEGIN
+Network 1 
+// Network Comment
+END_INTERRUPT_BLOCK
